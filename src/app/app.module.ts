@@ -4,6 +4,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule} from '@angular/forms';
+import { HttpModule }    from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 
 import { AppComponent } from './app.component';
@@ -16,9 +18,11 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
 	  BrowserAnimationsModule,
-	  MaterialModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpModule,
+    HttpClientModule,
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
