@@ -2,27 +2,32 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
-import { AppRoutingModule } from './app-routing.module';
 import { FormsModule} from '@angular/forms';
 import { HttpModule }    from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
+import { HeaderComponent } from './header/header.component';
+import { RoutingModule } from './routing/routing.module';
+import { routingComponent } from './routing/routing.module';
 
 
 import { AppComponent } from './app.component';
 
 
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    routingComponent
   ],
   imports: [
     BrowserModule,
 	  BrowserAnimationsModule,
-    AppRoutingModule,
     FormsModule,
     HttpModule,
     HttpClientModule,
     MaterialModule,
+    RoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

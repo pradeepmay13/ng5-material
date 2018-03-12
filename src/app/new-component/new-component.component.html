@@ -1,0 +1,15 @@
+<h2>
+  New Component
+</h2>
+<mat-card>
+	<mat-form-field>
+		<input matInput [(ngModel)]="answer" placeholder="Username">
+	</mat-form-field>
+
+	<br>
+	<button mat-raised-button (click)="showAnswer()">Answer Me</button>
+	<mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
+</mat-card>
+<mat-card *ngIf="answerDisplay">
+	<h1>{{ answerDisplay }}, you are on New Components </h1>
+</mat-card>

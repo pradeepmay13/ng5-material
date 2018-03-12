@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Http } from '@angular/http';
 
 @Component({
   selector: 'app-root',
@@ -7,16 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
-
-  answer:string='';
-  answerDisplay:string='';
-  showSpinner:boolean=false;
-  showAnswer(){
-  	this.showSpinner=true;
-
-  	setTimeout(()=>{
-  		this.answerDisplay=this.answer;
-  		this.showSpinner=false;
-	  },2000)
-  }
+  
+  
 }
