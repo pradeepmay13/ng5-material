@@ -4,14 +4,16 @@ import { Routes, RouterModule } from '@angular/router';
 import { TabsComponent } from '../tabs/tabs.component';
 import { PagenotfoundComponent } from '../pagenotfound/pagenotfound.component';
 import { NewComponentComponent } from '../new-component/new-component.component';
+import { DataTableComponent } from '../data-table/data-table.component';
 
 
 const routes:Routes=[
 	{ path: '', redirectTo: 'tabs',pathMatch: 'full' },
 	{ path: 'tabs', component: TabsComponent },
   { path: 'NewComponent', component: NewComponentComponent },
+  { path:'list', component: DataTableComponent }
 	{ path: '**', redirectTo: '/' },
-	{ path:'**', component: PagenotfoundComponent }
+	{ path:'**', component: PagenotfoundComponent },
 ]
 
 
@@ -29,5 +31,6 @@ export class RoutingModule { }
 export const routingComponent=[ 
 	TabsComponent,
   NewComponentComponent, 
-	PagenotfoundComponent
+	PagenotfoundComponent,
+  DataTableComponent
 ]
