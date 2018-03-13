@@ -11,7 +11,7 @@ const routes:Routes=[
 	{ path: '', redirectTo: 'tabs',pathMatch: 'full' },
 	{ path: 'tabs', component: TabsComponent },
   { path: 'NewComponent', component: NewComponentComponent },
-  { path:'list', component: DataTableComponent }
+  { path:'list', component: DataTableComponent },
 	{ path: '**', redirectTo: '/' },
 	{ path:'**', component: PagenotfoundComponent },
 ]
