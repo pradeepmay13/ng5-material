@@ -11,6 +11,7 @@ import { routingComponent } from './routing/routing.module';
 
 
 import { AppComponent } from './app.component';
+import { DataServiceService } from './services/data-service.service';
 
 
 
@@ -29,7 +30,7 @@ import { AppComponent } from './app.component';
     MaterialModule,
     RoutingModule
   ],
-  providers: [],
+  providers: [DataServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
